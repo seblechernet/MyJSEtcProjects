@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction</title>
+</head>
+<body>
+<h5>Introduction A</h5>
+<p id=new></p>
+<button onclick="myFunction1()">Click Here for Count</button>
+<script>
+    var x = 0;
+    function myFunction1() {
+        x = x + 1;
+        document.getElementById("new").innerText = "The number of clicks is : " + x;
+    }
+</script>
+<h5>Introduction B</h5>
+<button onclick="myFunction2()">Click Here to add a paragraph</button>
+
+<div id="one"></div>
+<script>
+    function myFunction2() {
+       var para=document.createElement("p");
+       var t=document.createTextNode("This is a paragraph");
+       para.appendChild(t);
+       document.getElementById("one").appendChild(para);
+
+    }
+</script>
+<h5>Introduction C</h5>
+
+<button id="btn">Click Here to add a paragraph</button>
+<div id="mydiv"></div>
+<script>
+    function myFunction3() {
+        var para=document.createElement("p");
+        var t=document.createTextNode("This is a paragraph");
+        para.appendChild(t);
+        document.getElementById("mydiv").appendChild(para);
+    }
+    document.getElementById("btn").addEventListener("click",myFunction3);
+</script>
+</body>
+</html>
+
