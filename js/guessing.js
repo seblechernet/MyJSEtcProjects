@@ -11,7 +11,7 @@
         count=4;
     }
     else {
-        document.getElementById("result").innerHTML = "That is incorrect. Guess again." + guess +"the rand is "+ rand;
+        document.getElementById("result").innerHTML = "That is incorrect. Guess again." + guess +"the rand is "+ rand + "count is" + count;
         count++;
     }
 }
